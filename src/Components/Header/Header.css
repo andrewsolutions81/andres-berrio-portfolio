@@ -1,0 +1,27 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  height: 7rem;
+  background-color: rgb(148, 148, 148);
+}
+
+.header-titles {
+  width: 30%;
+  padding-left: 2em;
+}
+
+.header-h1 {
+  color: #000;
+}
+
+.header-h2 {
+  color:rgb(92, 92, 92);
+}
+
+.tabs {
+  display: flex;
+  font-display: row;
+  width: 30%;
+  align-items: center;
+  justify-content: space-around;
+}
