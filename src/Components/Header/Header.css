@@ -1,12 +1,11 @@
 .Header {
   display: flex;
   flex-direction: row;
-  height: 7rem;
-  background-color: rgb(148, 148, 148);
+  height: 5rem;
 }
 
 .header-titles {
-  width: 30%;
+  width: 34%;
   padding-left: 2em;
 }
 
@@ -24,4 +23,30 @@
   width: 30%;
   align-items: center;
   justify-content: space-around;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+.social-media-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-img__git {
+  height: 3em;
+  width: 3em;
+  padding-top: 0.2em;
+}
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }

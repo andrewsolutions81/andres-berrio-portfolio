@@ -1,4 +1,7 @@
 import React from "react";
+import Mail from '../../img/mail-icon.png'
+import Git from '../../img/github-icon.png'
+import Insta from "../../img/instagram-icon.png"
 import "./Header.css";
 
 export default function Header() {
@@ -13,7 +16,21 @@ export default function Header() {
         <span className="projects-tab">Projects</span>
         <p>contact </p>
       </section>
-      <div className="header-contact">ig github</div>
+      <section className="social-media">
+        <div className="header-mail social-media-item">
+          <img src={Mail} alt="mail icon" loading="lazy" className="header-img__mail" />
+        </div>
+        <div className="header-git social-media-item">
+          <img src={Git} alt="git icon" loading="lazy" className="header-img__git" />
+        </div>
+        <div className="header-insta social-media-item">
+          <img src={Insta} alt="instagram icon" loading="lazy" className="header-img__insta" />
+        </div>
+      </section>
+      <div className="theme">
+        <button className="theme-btn">Theme</button>
+        <span className="theme-text">dark / light</span>
+      </div>
     </div>
   );
 }
