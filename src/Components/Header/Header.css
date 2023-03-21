@@ -9,6 +9,10 @@
   padding-left: 2em;
 }
 
+.header-h1.header-h2:hover {
+  cursor : pointer;
+}
+
 .header-h1 {
   color: #000;
 }
@@ -31,7 +35,6 @@
   align-items: center;
   width: 20%;
   justify-content: space-around;
-  align-self: flex-end;
 }
 .social-media-item {
   display: flex;

@@ -6,11 +6,10 @@ import "./Home.css"
 
 export default function Home() {
   return (
-    <main className="Home">
-        <p className='home'>i am home page</p>
+    <div className="Home">
       <About />
       <Projects />
       <Contact/>
-    </main>
+    </div>
   )
 }
