@@ -1,21 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 import Mail from '../../img/mail-icon.png'
 import Git from '../../img/github-icon.png'
 import Insta from "../../img/instagram-icon.png"
 import "./Header.css";
 
 export default function Header() {
+  const navigate = useNavigate()
+
+  const navigateHome = () => navigate("/home")
+  const navigateAbout = () => navigate("/about")
+  const navigateProjects = () => navigate("/projects")
+  const navigateContact = () => navigate("/contact")
+
 
   return (
     <div className="Header">
-      <main className="header-titles">
-        <h1 className="header-h1" >Andrew Solutions</h1>
-        <h2 className="header-h2">Developer</h2>
+      <main className="header-titles" >
+        <h1 className="header-h1" onClick={navigateHome} >Andrew Solutions</h1>
+        <h2 className="header-h2" onClick={navigateHome} >Developer</h2>
       </main>
       <section className="tabs">
-        <p>About</p>
-        <span className="projects-tab">Projects</span>
-        <p>contact </p>
+        <span className="about-tab" onClick={navigateAbout}>About</span>
+        <span className="projects-tab" onClick={navigateProjects}>Projects</span>
+        <span className="contact-tab" onClick={navigateContact}>Contact</span>
       </section>
       <section className="social-media">
         <div className="header-mail social-media-item">
