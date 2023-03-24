@@ -1,5 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  border-style: border-box;
+  /* border-style: border-box; */
+  --text-light: black;
+  --background-light: gray;
+  --text-dark: white;
+  --background-dark: var(--background-light)
+  --text-secondary: green;
+  --primary-color: blue;
+  --secondary-color: darkred;
+
+}
+
+.light {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
