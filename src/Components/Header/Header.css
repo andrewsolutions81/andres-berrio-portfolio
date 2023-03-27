@@ -9,16 +9,16 @@
   padding-left: 2em;
 }
 
-.header-h1.header-h2:hover {
+.header-h1, .header-h2:hover {
   cursor : pointer;
 }
 
 .header-h1 {
-  color: #000;
+  color: var(--primary-color);
 }
 
 .header-h2 {
-  color:rgb(92, 92, 92);
+  color:var(--secondary-color);
 }
 
 .tabs {
@@ -27,6 +27,10 @@
   width: 30%;
   align-items: center;
   justify-content: space-around;
+}
+
+.single-tab:hover {
+  cursor: pointer;
 }
 
 .social-media {
