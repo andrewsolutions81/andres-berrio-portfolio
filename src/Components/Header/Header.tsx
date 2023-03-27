@@ -24,13 +24,13 @@ export default function Header() {
         </h2>
       </main>
       <section className="tabs">
-        <span className="about-tab" onClick={navigateAbout}>
+        <span className="about-tab single-tab" onClick={navigateAbout}>
           About
         </span>
-        <span className="projects-tab" onClick={navigateProjects}>
+        <span className="projects-tab single-tab" onClick={navigateProjects}>
           Projects
         </span>
-        <span className="contact-tab" onClick={navigateContact}>
+        <span className="contact-tab single-tab" onClick={navigateContact}>
           Contact
         </span>
       </section>
