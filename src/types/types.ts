@@ -1,9 +1,10 @@
+// every app types
 export type projectType = {
-  id: string;
+  id?: string;
   link: string;
   title: string;
   img: string;
-  desciption: string;
+  description: string;
   role: string;
   startDate: string;
   endDate: string;

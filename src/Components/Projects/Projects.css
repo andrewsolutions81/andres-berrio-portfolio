@@ -1,0 +1,57 @@
+.projects-ul {
+  list-style-type: none;
+  padding: 0 10em 0 10em;
+}
+
+.project-container {
+  margin-top: 1em;
+  display: flex;
+  border: solid var(--secondary-color);
+
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.porject-title {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.project-role {
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+  font-style: italic;
+}
+
+.project-description {
+  margin: 2em ;
+}
+
+.skills-container {
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+
+.skills {
+  list-style-type: none;
+  display: inline;
+}
+
+
+.project-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  max-height: 80%;
+  max-width: 80%;
+}
