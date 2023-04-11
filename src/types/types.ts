@@ -12,3 +12,9 @@ export type projectType = {
 };
 
 export type projectsType = projectType[];
+
+export type FormDataType = {
+  name: string;
+  email: string;
+  message: string;
+};
