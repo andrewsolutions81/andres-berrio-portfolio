@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FormDataType } from "../../types/types";
 import "./Contact.css";
+import { FormDataType } from "../../types/types";
+import emailjs from "@emailjs/browser"
 
 
 
@@ -21,11 +22,13 @@ const Contact: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(formData);
+    emailjs.sendForm('service_sevssqn','template_bv6m4nd',event.target  as HTMLFormElement,'vqH6j6-USbMs-wy1o')
   };
 
   return (
     <div className="Contact">
       <h1 className="contact-h1">Contact me!</h1>
+      <h2 className="contact-h2">andrewsolutions81@gmail.com</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <section className="contact-section contact-name">
           <label className="contact-label_name" htmlFor="name-input">
