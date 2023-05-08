@@ -38,15 +38,16 @@ export default function Header() {
         </span>
       </section>
       <section className="social-media">
-        <div className="header-mail social-media-item">
-          <a href={mailtoLink}>
-            <img
-              src={Mail}
-              alt="mail icon"
-              loading="lazy"
-              className="header-img__mail"
-            />
-          </a>
+        <div
+          className="header-mail social-media-item"
+          onClick={navigateContact}
+        >
+          <img
+            src={Mail}
+            alt="mail icon"
+            loading="lazy"
+            className="header-img__mail"
+          />
         </div>
         <div className="header-linkedin social-media-item">
           <a href="https://www.linkedin.com/in/andres-berrio/">
@@ -79,10 +80,6 @@ export default function Header() {
           </a>
         </div>
       </section>
-      {/* <div className="theme">
-        <button className="theme-btn">Language</button>
-        <span className="theme-text">English / Espanish</span>
-      </div> */}
     </div>
   );
 }

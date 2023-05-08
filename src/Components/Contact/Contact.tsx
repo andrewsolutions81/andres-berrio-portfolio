@@ -28,6 +28,7 @@ const Contact: React.FC = () => {
   return (
     <div className="Contact">
       <h1 className="contact-h1">Contact me!</h1>
+      <h2 className="contact-h2">andrewsolutions81@gmail.com</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <section className="contact-section contact-name">
           <label className="contact-label_name" htmlFor="name-input">
