@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { FormDataType } from "../../types/types";
-import emailjs from "@emailjs/browser"
-
-
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<FormDataType>({
@@ -11,6 +9,7 @@ const Contact: React.FC = () => {
     email: "",
     message: "",
   });
+  const [emailSent, setEmailSent] = useState(false);
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -22,7 +21,13 @@ const Contact: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(formData);
-    emailjs.sendForm('service_sevssqn','template_bv6m4nd',event.target  as HTMLFormElement,'vqH6j6-USbMs-wy1o')
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      event.target as HTMLFormElement,
+      process.env.REACT_APP_PUBLIC_KEY
+    );
+    setEmailSent(true)
   };
 
   return (
@@ -69,6 +74,11 @@ const Contact: React.FC = () => {
           Send
         </button>
       </form>
+      {emailSent ? (
+        <span className="contact-alert">Email Sent</span>
+      ) : (
+        <span className="contact-alert">Ask me anything !</span>
+      )}
     </div>
   );
 };
