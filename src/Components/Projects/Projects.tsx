@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import { projectsType, projectType } from "../../types/types";
+import { projectType } from "../../types/types";
 import { projects } from "../../data/projectsData";
 
 export default function Projects() {

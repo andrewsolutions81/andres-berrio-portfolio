@@ -8,8 +8,6 @@ import "./Header.css";
 
 export default function Header() {
   const navigate = useNavigate();
-  const emailAddress = "andrewsolutions81@gmail.com";
-  const mailtoLink = `mailto:${emailAddress}`;
 
   const navigateHome = () => navigate("/home");
   const navigateAbout = () => navigate("/about");
